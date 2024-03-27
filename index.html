@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Skin Cancer Detector</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/woza.css" />
+    <script type="text/javascript" src="js/target_classes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script type="text/javascript" src="js/mobile-net.js"></script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="w3-center w3-margin-top">
+     <h3>This WEB-APP is created by - Kairaa Kaur, Disha Arora & Shivakshi Laroiya</h3>
+    </div>
+
+    <div class="container">
+      <div class="mobilenet-demo-container">
+        <h1>Skin Cancer Detector</h1>
+        <div class="demo-wrapper">
+          <div>
+            <button id="load-button" class="input-button" onclick="loadModel()">
+              Load Model
+            </button>
+            <button
+              id="demo-image-button"
+              class="input-button"
+              onclick="loadDemoImage()"
+            >
+              Demo Image
+            </button>
+            <label for="select-file-image" class="input-button">
+              Upload Image
+            </label>
+            <input
+              id="select-file-image"
+              type="file"
+              onchange="loadFile(event)"
+              style="display: none"
+            />
+            <div
+              id="progress-box"
+              style="display: none; width: 100% !important"
+            >
+              <img src="assets/loading.gif" id="demo-load" width="100px" />
+              <p style="color: white">Loading mobilenet model..</p>
+            </div>
+          </div>
+          <div>
+            <button
+              id="predict-button"
+              class="input-button predict-button"
+              onclick="predButton()"
+            >
+              Predict
+            </button>
+          </div>
+        </div>
+        <div class="demo-output">
+          <div class="out-box" id="select-file-box" style="display: none">
+            <img id="test-image" height="300px" width="450px" margin="2px" />
+          </div>
+          <div class="out-box" id="predict-box" style="display: none">
+            <p id="prediction"></p>
+            <br />
+            <p>
+              <b
+                style="
+                  color: #c2c2c2 !important;
+                  font-style: italic;
+                  font-weight: 100;
+                  font-size: 18px;
+                "
+                >Top-3 Predictions</b
+              >
+            </p>
+            <ul id="predict-list"></ul>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="chart-box" style="display: none" height="120px"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
