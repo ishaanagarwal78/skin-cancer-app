@@ -6,9 +6,9 @@ A Web Application that uses Computer Vision and Deep Learning to identify the th
 
 <div style="text-align: center"><img src="./image.png" width=400px></div>
 
-After loading the model we are go oto go with our skin cancer detector and can try using it with the demo image or you can upload an image 
+After loading the model we are good to go with our skin cancer detector, and can try using it with the demo image or you can upload an image!!
 
-
+<div style="text-align: center"><img src=".Screenshot 2024-03-28 231802.png" width=600px></div>
 
 > **Warning**
 > This is a prototype.  The model was trained using image data that was released under a CC BY-NC-SA 4.0 licence. That means that this app cannot be used for commercial purposes.
@@ -18,9 +18,3 @@ After loading the model we are go oto go with our skin cancer detector and can t
 
 Check out the Application
   - Skin Cancer Detector: (https://ishaanagarwal78.github.io/skin-cancer-app/)
-
-You can find the Kaggle Notebook used to train the model here: [Kaggle Notebook](https://www.kaggle.com/indrashispaul/using-mobilenet-keras-tfjs-web-app/notebook)
-
-
-
-
