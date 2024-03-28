@@ -4,7 +4,7 @@ A Web Application that uses Computer Vision and Deep Learning to identify the th
 
 1st we need to load our model by simply clicking on the "Load Model" button
 
-<div style="text-align: center"><img src="./Screenshot 2024-03-28 231429.png" width=400px></div>
+<div style="text-align: center"><img src="./Screenshot 2024-03-28 231429.png" width=600px></div>
 
 After loading the model we are good to go with our skin cancer detector, and can try using it with the demo image or you can upload an image!!
 
