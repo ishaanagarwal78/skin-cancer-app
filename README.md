@@ -8,7 +8,7 @@ A Web Application that uses Computer Vision and Deep Learning to identify the th
 
 After loading the model we are go oto go with our skin cancer detector and can try using it with the demo image or you can upload an image 
 
-<div style="text-align: center"><img src="./Screenshot 2024-03-28 231802.png" width=400px></div>
+
 
 > **Warning**
 > This is a prototype.  The model was trained using image data that was released under a CC BY-NC-SA 4.0 licence. That means that this app cannot be used for commercial purposes.
